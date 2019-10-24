@@ -406,4 +406,4 @@ lab.event.onClick = function(){
 }
 
 
-Game.start(room2, '아아, 들리십니까?\n\n들리십니까??!\n\n(일부 효과음이 있습니다)')
+Game.start(room1, '아아, 들리십니까?\n\n들리십니까??!\n\n(일부 효과음이 있습니다)')
