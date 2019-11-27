@@ -110,7 +110,7 @@ Object.member('isPicked', function(){
 	return this.id.isPicked()
 })
 
-//**// Door Definition
+// Door Definition
 function Door(room, name, closedImage, openedImage, connectedTo){
 	Object.call(this, room, name, closedImage)
 
@@ -142,7 +142,7 @@ Door.member('onClose', function(){
 	this.id.setSprite(this.closedImage)
 })
 
-//**// Direction Definition
+// Direction Definition
 function Direction(room, name, Image, connectedTo){
 	Object.call(this, room, name, Image)
 
@@ -156,7 +156,7 @@ Direction.member('onClick', function(){
 	Game.move(this.connectedTo)
 })
 
-//**// openclose Definition
+// openclose Definition
 function openclose(room, name, closedImage, openedImage){
 	Object.call(this, room, name, closedImage)
 
@@ -180,7 +180,7 @@ openclose.member('onClose', function(){
 	this.id.setSprite(this.closedImage)
 })
 
-//**// Keypad Definition
+// Keypad Definition
 function Keypad(room, name, image, password, callback){
 	Object.call(this, room, name, image)
 
@@ -194,7 +194,7 @@ Keypad.member('onClick', function(){
 	showKeypad('number', this.password, this.callback)
 })
 
-//**// Item Definition
+// Item Definition
 function Item(room, name, image){
 	Object.call(this, room, name, image)
 }
@@ -208,7 +208,7 @@ Item.member('isHanded', function(){
 	return Game.handItem() == this.id
 })
 
-//**// Computer Definition
+// Computer Definition
 function Computer(room, name, image, message){
 	Object.call(this, room, name, image)
 
